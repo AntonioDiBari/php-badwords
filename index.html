@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nome Esercizio</title>
+    <title>php-badwords</title>
     <!-- link icon Bootstrap -->
     <link
       rel="stylesheet"
@@ -17,7 +17,35 @@
     />
   </head>
   <body>
-    ehila
+    <div class="container mt-3">
+      <form action="./result.php" method="POST" class="row">
+        <div class="col-6">
+          <div class="card p-3">
+            <label for="paragrafo">Paragrafo</label>
+            <textarea
+              name="paragrafo"
+              id="paragrafo"
+              class="form-control"
+            ></textarea>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card p-3">
+            <label for="parola_censura">Parola da censurare</label>
+            <input
+              type="text"
+              name="parola_censura"
+              id="parola_censura"
+              class="form-control"
+            />
+          </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center mt-3">
+          <button class="btn btn-dark">Censura il tuo paragrafo</button>
+        </div>
+      </form>
+    </div>
     <!-- script Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
